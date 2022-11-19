@@ -1,0 +1,116 @@
+ /* 
+Building blocks 
+Selector {
+[declaration Block]
+property: value;
+}
+  */
+
+/*  
+3 way to target 
+Element 
+Class 
+ID
+*/
+
+
+/* 
+-rgb
+rgba
+red , blue, yellow and alpha which is transparency.
+rgba(200, 15, 100, .5);
+
+Hexidecimal 
+ color: #d2d2d2;
+
+ :root {
+    background-color: #d2d2d2;
+
+
+-Order of final response : 
+-!important
+-Inline css
+-Id selectors
+-Class selectors
+-Element
+
+*/
+
+
+body {
+    margin: 0 ;
+    padding: 0;
+}
+
+
+/* ID'S  */
+#home{
+    
+    float: left;
+    color: red !important;
+
+}
+
+/* 
+TARGETING A CLASS.
+*/
+
+
+nav {
+    background-color: #766767;
+    overflow: hidden;
+}
+
+
+
+.btn{
+    float: right;
+    font-size: 2em;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* 
+COMPOUND OPERATORS: 
+> REFERS TO DIRECT CHILDREN OF AN ELEMENT.
+, Matching selector
++ Immediate sibling of an element.
+~ Subsequent sibling of an element.
+*/
+ nav .btn {
+    /* 
+    points to nav or any childen in it  named .btn*/
+    text-shadow: 5px 5px 5px rgba(10,12,0,.5);
+ }
+div .paragraph > p {
+    /* Targeting any div with a class paragraph that is holding a <p> element */
+    color: red;
+}
+.paragraph + div {
+    /*  Targets the first div  */
+    color: purple;
+}
+  
+
+a:hover {
+    color: lightblue;
+    /*  mousing over anchor tag will alter its color
+    "home" doesn't change. due to !important tag on it 
+    */
+}
+ a:active {
+    color: purple;
+    text-shadow: 2px 2px 2px rgb(255,255,255);
+     /* 
+ COPY A BLOCK OF CODE ALT+SHFT+DOWNARROW / UP ARROW
+
+ MOVE A BLOCK OF CODE 
+ ALT+DOWN/UP ARROW
+  */
+    /* color: purple;
+    text-shadow: 12px 12px 12px rgb(255,255,255); */
+ }
+ 
+    
+ 
