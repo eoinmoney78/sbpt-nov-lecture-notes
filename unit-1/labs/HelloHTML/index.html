@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello-Html</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: rgb(181, 173, 164);
+      }
+      header {
+        text-align: center;
+        font-size: 1em;
+        background-color: grey;
+        border: 2px solid black;
+      }
+      nav {
+        font-size: 1.5rem;
+        color: green;
+        display: flex;
+        justify-content: space-around;
+        text-shadow: rgb(75, 12, 47) 1px 1px 1px;
+        margin-top: 10px;
+        margin-bottom: 160px;
+      }
+      a {
+        text-decoration: none;
+        text-shadow: 12p 4px 12px black;
+        justify-content: space-between;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      a:hover {
+        background-color: rgb(118, 118, 93);
+        color: rgb(209, 183, 183);
+      }
+      a:active {
+        background: #04404a;
+      }
+      .top-link {
+        border: none;
+      }
+
+      main {
+        text-align: center;
+        margin: 0 auto;
+        width: 250px;
+      }
+
+      .img-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 50px;
+      }
+      img {
+        box-shadow: 12px 12px 12px grey;
+      }
+      footer {
+        text-align: center;
+        background-color: blanchedalmond;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>This is my Header</h1>
+    </header>
+    <a class="top-link" name="top"></a>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="#home" id="home">Home</a>
+    </nav>
+    <hr />
+
+    <!--  Main section-->
+
+    <main>
+      <h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem at,
+        libero repellat vel architecto aperiam quod distinctio ipsa voluptates
+        commodi. Nemo, repudiandae? Veritatis a corporis nostrum sapiente
+        adipisci eaque molestias ratione accusamus ea maiores modi illum dicta
+        eius expedita facilis recusandae quis aut nemo cum voluptate, dolorem
+        error vel. Voluptatem?
+      </h4>
+    </main>
+    <div class="img-container">
+      <figure>
+        <img src="https://loremflickr.com/320/240" />
+        <figcaption>Fig-1 random images</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="https://picsum.photos/seed/picsum/200/300"
+          width="300px"
+          alt="Random images"
+        />
+        <figcaption>fig-2 Random images</figcaption>
+      </figure>
+      <figure>
+        <figure>
+          <img
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.desicomments.com%2Fwp-content%2Fuploads%2F2017%2F01%2FBear-Image.jpg&f=1&nofb=1&ipt=8553213a77bb28b3f86ecaff67c82a6cb442b60560ec357d35ff58036e8c5369&ipo=images"
+            width="300px"
+            height="300px"
+            alt="Random images"
+          />
+          <figcaption>fig-2 Random images</figcaption>
+        </figure>
+      </figure>
+    </div>
+    <footer>
+      <h1>This is my footer</h1>
+      <a class="top-link" href="#top">TOP</a>
+    </footer>
+  </body>
+</html>
