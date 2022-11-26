@@ -1,0 +1,148 @@
+html {
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+
+   
+}
+
+header{
+ 
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(77, 69, 56);
+   
+    height: 200px;
+    border: 2px solid black;
+    padding: 0;
+    box-shadow: 4px 4px 6px;
+}
+h1 {
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    text-shadow: 1px 2px 4px rgb(175, 163, 163);
+    box-shadow: 2px 8px 5px rgb(241, 238, 238);
+}
+.nav {
+   border: 1px solid grey;
+   display: flex;
+   padding: 20px;
+   
+}
+
+.link-list{
+    background-color: rgb(157, 178, 195);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+   border: 3px solid black;
+    list-style: none;
+    margin: 0 auto;
+  
+    
+
+}
+.link a{
+   
+    font-size: 1.4rem;
+    text-decoration: none;
+    border: 1px solid rgb(32, 12, 12);
+    border-radius: 10px;
+    background-color:beige;
+    color: rgb(14, 2, 2);
+    padding: 3px;
+    margin: 18px;
+   }
+
+.link a:hover {
+    color: rgb(250, 25, 25);
+    background-color: rgb(27, 90, 146);
+}
+.link a:active {
+    color: rgb(193, 235, 193);
+} 
+
+/* main section  */
+.hero-banner {
+   
+    background-image: url(https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    width: 1100px;
+    height: 500px;
+    margin: auto;
+    border: 2px solid;
+    color: white;
+
+    } 
+
+
+
+/* GALLERY IMAGES */
+
+#gallery-container
+{
+ display: grid;
+ grid-auto-flow: column;
+grid-template-columns: (2, 250px);
+grid-gap: 10px;
+ grid-template-rows: repeat( 2,350px); 
+ margin-top: 150px;
+
+}
+
+.box{
+ 
+ padding:10px;
+ object-fit: cover;
+}
+img {
+    margin-left: 7%;
+ width: 75%;
+ box-shadow: 12px 12px 10px;
+ object-fit: cover;
+}
+figcaption {
+    text-align: center;
+    color: white;
+}
+
+
+/* FOOTER  */
+.footer {
+    text-align: center;
+   width: 100%;
+   height: 10vh;
+    background-color:rgb(241, 238, 238)
+
+}
+
+
+ 
+
+
+
+    @media all and (min-width: 200px) and (max-width: 1100px) {
+        .hero-banner {
+          width: 460px;
+          border-color:rgba(216, 250, 25, 0.302);
+          box-shadow: 4px 5px 10px silver;
+          
+        }
+        #gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+           justify-content: center;
+
+          
+        }
+        img {
+            min-width: 250px;
+        }
+        
+    }

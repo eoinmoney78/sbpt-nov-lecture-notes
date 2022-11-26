@@ -1,0 +1,57 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(181, 173, 164);
+    box-sizing: border-box;
+  }
+nav {
+    text-align: center;
+    margin: 20px 0 0 ;
+    width: 100vw;
+    font-size: 1.7rem;
+    padding: 10px 0;
+    color: green;
+    text-shadow: rgb(75, 12, 47) 1px 1px 1px;
+   }
+  nav li {
+    display: inline-block;
+    margin-right: 5%;
+    padding: 20px;
+   }
+  nav a {
+    text-decoration: none;
+    text-shadow: 12p 4px 12px black;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+   
+  }
+  a:hover {
+    background-color: rgb(118, 118, 93);
+    color: rgb(209, 183, 183);
+  }
+
+  a:active {
+    background: #04404a;
+  }
+
+  .top-link {
+    border: none;
+
+
+}
+
+.title {
+   
+    
+    text-align: center;
+    background-color: black;
+    color:rgb(209, 183, 183)
+    
+   
+}
+.map-directions {
+    padding-left: 500px;
+}
