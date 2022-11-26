@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Embedding media</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+         Purposes:
+         - Videos can be a useful to provide information.
+         -Images can make your site more enjoyable.
+         -Maps can help potential customers route too "your" store.
+         -Provide more information and engagement.
+Types: 
+e
+   -media
+   -Other files 
+   -ads
+   -maps, graphs, ect
+
+     -->
+
+    <!--  Images -->
+    <img
+      src="https://imgs.search.brave.com/CvCz_h9vCKmD2oJ6HfxOPXclrQSLiS_7t-caNAfkAc8/rs:fit:1200:1000:1/g:ce/aHR0cDovL3d3dy5l/bWFnaWRsYS5jb20v/d3AtY29udGVudC91/cGxvYWRzLzIwMTMv/MTAvaHRtbDUucG5n"
+      alt="image of html logo"
+      justify-content:
+      center;
+    />
+    <!--  
+        Common files: 
+                 -Jpg/jpeg
+                     -common
+                     -no transparent allowed
+                     -raster pixel based
+
+                 PNG: 
+                    -raster based 
+                    -support transparent
+
+
+                 Svg:
+                   -scalable vector based graphic
+                   -vector based
+                   - Scales indefinitely
+     -->
+
+    <!-- 
+        iframe
+
+             
+     -->
+    <iframe
+      src="https://www.december.com/html/spec/HTML5-Cheat-Sheet.pdf"
+      title="html cheat sheet"
+      frameborder="0"
+      height="500px"
+      width="800px"
+      border-radius:
+      20px;
+    ></iframe>
+
+    <!--  
+        -can take longer to load 
+        - used to embed other documents
+        -utilize attributes to detail elements.
+        -common to use for videos from dedicated hosts (youtube , Vimeo)
+     -->
+
+    <!-- Video  -->
+    <video width="400" height="200" controls>
+      <source src="#mp4" type="video/mp4" />
+
+      <source src="#ogg" type="video/ogg" />
+      <source src="#mov" type="video/mov" />
+      unsupported file type
+    </video>
+    <!-- 
+        -options for locally stored videos.
+        -control
+            -provides a " play" , "pause" , "volume", option
+            -source 
+            -  provides possible file formats for the users bowser
+            -checks file from top to bottom
+     -->
+    <br />
+
+    <!-- Audio -->
+
+    <audio autoplay="false" muted="true" controls>
+      <source src="#audio.mp3" type="audio/mp3" />
+      <source src="audio.ogg" type="audio/ogg" />
+    </audio>
+    <!-- 
+        autoplay
+        --starts audio when page loads
+        -accepts a boolean value (true/fa;se)
+to either do this or not 
+- dependign on true/false, can be muted on load 
+-repeats the audio after it is loaded ;
+     -->
+
+    <!-- maps  -->
+    <iframe
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-73.2130900,44.4749000,-73.2102500,44.4772200&layer=mapnik"
+      frameborder="0"
+      title="upright Address location"
+      width="400"
+      height="300"
+    ></iframe>
+  </body>
+</html>
