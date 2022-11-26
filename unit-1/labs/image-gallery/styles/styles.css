@@ -67,6 +67,14 @@ h1 {
 .link a:active {
     color: rgb(193, 235, 193);
 } 
+h2 {
+    font-size: 5rem;
+    text-align:center;
+    font-family: 'Poppins', sans-serif;
+}
+hr{
+    width: 400px;
+}
 
 /* main section  */
 .hero-banner {
@@ -116,11 +124,13 @@ figcaption {
 /* FOOTER  */
 .footer {
     text-align: center;
+    padding-top: 30px;
    width: 100%;
    height: 10vh;
     background-color:rgb(241, 238, 238)
 
 }
+
 
 
  
