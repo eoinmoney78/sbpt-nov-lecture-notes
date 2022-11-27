@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0; 
+box-sizing: border-box;
+background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.iiiXp9D2OGxsZxQoWmFuAAHaEK%26pid%3DApi&f=1&ipt=bf80ff82799b11a17198d4931e74f6f39cce4b3300eb3f65820d14e517ea944c&ipo=images");
+background-repeat: no-repeat;
+background-size: cover;
+background-color: rgb(217, 162, 80);
+
+}
+a {
+   text-decoration: none;
+   padding: 10px;
+   color: white;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px;
+    font-size: 4rem;
+
+}
+
+.landing-banner{
+    height: 50vh;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.RkH1zjJN11CrgmsOGVmyIQHaEo%26pid%3DApi&f=1&ipt=b1c297658415053103be5db26e33cb78263e4a2b7ae895555a0b23f1ce9ee709&ipo=images);
+    width: 80%;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid black;
+    box-shadow: 4px 4px 4px rgb(230, 226, 226);
+    margin-bottom: 60px;
+    
+   
+}
+
+.btn{
+    position: relative;
+    top: 50%;
+    left: 50%; 
+    padding: 12px;
+    color: blue;
+    border-radius: 4px;
+    background-color: aqua;
+   
+
+
+}
+.btn:hover
+{
+    background-color: bisque;
+    color: maroon;
+    margin-bottom:100px;
+        
+    
+}
+.footer-landing h1 {
+    /* height: 200px; */
+  
+    background-color: beige;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    color: white;
+}

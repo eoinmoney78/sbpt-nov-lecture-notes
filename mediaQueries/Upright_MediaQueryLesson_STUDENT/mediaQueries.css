@@ -1,0 +1,60 @@
+/*! Media Query Build */
+/* 
+common units of measurements
+-
+-Percentages
+-Viewport Width: vw
+-Viewport height: vh
+-Root element Font-size: em;
+-Parent font-size: em;
+
+Using Media Queries
+  ex:
+
+   -@media screen {
+    < -- target screens only
+  div {
+         <-- element to adjust 
+         background-color: blue; , -- attributes of element
+         }
+    }
+    And 
+    @media screen and (min-width:750px) {
+    }
+    OR 
+    @media screen, (min-width:750px){
+    }
+    Build with Mobile first concept!
+*/
+@media (max-width: 420px) {
+
+}
+nav ul {
+    padding: 0;
+}
+nav ul li {
+    font-size: x-large;
+    margin: 0 1.5rem;
+
+
+}
+
+
+p {
+    font-size: 16pt;
+}
+/* menu */
+.item-desc{
+    width: 100vw;
+}
+.desc {
+    flex-direction: column;
+    align-items: center;
+}
+.desc > p {
+    padding: 1rem 3rem;
+}
+/* footer  */
+footer {
+
+}
