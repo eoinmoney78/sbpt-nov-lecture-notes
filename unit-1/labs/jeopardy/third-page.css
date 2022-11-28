@@ -1,6 +1,6 @@
 html {
     
-    background-color: rgb(38, 91, 90);
+    background-color: rgb(31, 75, 74);
 }
 
 body {
@@ -9,20 +9,93 @@ body {
    
 }
 /* header  */
-a {
-    text-decoration: none;
-    padding: .1em;
-    color: white;
- }
+#hero {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.YGU8sz1oRgV3qCApUJdzQgHaF3%26pid%3DApi&f=1&ipt=ad34a3a8f7ca2c8ba7246701b3af75283e395f4bd3f99cf304b7a69b99600f36&ipo=images");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+#hero:after {
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .2;
+    z-index: -1;
 
-header, h1, h3{
+}
+
+.title{
     text-align: center;
     display: flex;
     justify-content: center;
-   
-   
+    position: relative;
+    top: 35px;
     color:azure;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 5px;
     
 }
+.home-tab, a {
+    text-decoration: none;
+    padding: .1em;
+    color: white;
+    position: relative;
+    
+    left: 10px;
+ }
+ h1, h2, h3, h4{
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+ }
+ .player-turn{
+    margin: 40px;
+
+    
+ }
+ .final-cat {
+   
+   width: 400px;
+
+    margin: 50px auto;
+    background-color:rgb(45, 24, 24);
+ }
+ #final, h3 {
+    height: 200px;
+    width: 450px;
+    border: 3px solid white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+ input {
+    margin: 12px auto;
+    border-radius: 5px;
+    display: flex;
+
+    
+ }
+ @media (max-width:650px) {
+    #hero{
+      width: 100%;
+   }
+  .player-turn, .final-cat, #final{ 
+    width: 400px;
+    
+      font-size: 1.5em;
+      color: white;
+      border: none;
+  }
+  .footer-landing, h6 {
+    
+      background-color: blueviolet;
+  }
+} 

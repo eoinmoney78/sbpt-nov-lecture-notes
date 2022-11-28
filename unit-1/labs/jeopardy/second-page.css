@@ -19,8 +19,6 @@ header, h1, h3{
     text-align: center;
     display: flex;
     justify-content: center;
-   
-   
     color:azure;
     font-size: 2rem;
     margin: 5px;
@@ -33,7 +31,6 @@ header, h1, h3{
     margin-left: 10px;
     position:relative;
     bottom: 5px;
-    
     border-radius: 5px;
     background-color: rgb(208, 255, 0);
 }
@@ -61,8 +58,8 @@ header, h1, h3{
    
     height: 100%;
     width: 100%;
-    background-color:black;
-    opacity: .2;
+    background-color:blue;
+    opacity: .1;
     z-index: -1;
 }
 
