@@ -62,14 +62,14 @@ header, h1, h3{
     height: 100%;
     width: 100%;
     background-color:black;
-    opacity: .45;
+    opacity: .2;
     z-index: -1;
 }
 
 /* GRID SECTION */
 #grid { 
     display: grid;
-    width: 80%;
+    width: 100%;
     height: 300px;
     background-color: grey;
     margin: auto;
@@ -172,12 +172,16 @@ h6 {
     padding: 30px;
 font-size: 1.5em;
 }
-@media (max-width:950px) {
+@media (min-width:950px) {
           #grid{
-            width: 650px;
-            
+            width: 900px;
+            font-size: 1.7em;
 
          }
+         #hero {
+            width: 100vw;
+         }
+         
         .a { 
             font-size: .7em;
             color: rgb(59, 30, 30);
@@ -186,12 +190,12 @@ font-size: 1.5em;
             background-color: blueviolet;
         }
 } 
-@media (max-width:650px) {
+@media (max-width:580px) {
     #grid{
       width: 333px;
    }
   .a { 
-      font-size: .3em;
+      font-size: .4em;
       color: black;
   }
   footer h6 {
