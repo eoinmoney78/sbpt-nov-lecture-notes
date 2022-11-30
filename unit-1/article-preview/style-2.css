@@ -1,0 +1,62 @@
+html {
+    width: 100%;
+}
+body {
+    margin: 0 ;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(179, 167, 167);
+   /* width: 100%; */
+}
+
+/* header and Nav */
+#top-title, h1{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: antiquewhite;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+
+    font-size: 1.6rem;
+}
+
+ .nav-links {
+    background-color: rgb(129, 141, 137);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 17px 0;
+
+}
+.link  {
+ font-size:1.6rem;
+font-family: 'Times New Roman', Times, serif;
+list-style: none;
+
+
+  
+}  
+.link a {
+  color: red;
+  text-decoration: none;
+ 
+
+}
+.link a:hover {
+    color: blue;
+}
+
+.wrapper .left .right {
+    display: flex;
+  
+
+}
+.right {
+    flex: 2;
+    width: 30%;
+}
+.left {
+    flex: 1;
+    width: 70%;
+}
