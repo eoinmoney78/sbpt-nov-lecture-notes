@@ -114,32 +114,32 @@ newNum > 0 ? console.log('yes') : console.log('no');
 
 // as an if/else 
 if (num > 0) {
-    console.loh('yes');
+    console.log('yes');
 
 } else {
     console.log('no');
 }
 
-// * Else / if 
+// // * Else / if 
 
-if (newNum == 0) {
-    console.log('hello');
+// if (newNum == 0) {
+//     console.log('hello');
 
-} else if (newNum < 0) {
-    console.log('hi');
+// } else if (newNum < 0) {
+//     console.log('hi');
 
-} else {
-    console.log('goodbye');
-}
+// } else {
+//     console.log('goodbye');
+// }
 
-(newNum == 0) ?
-    console.log('Hello') :
-    (newNum < 0) ? console.log('hi') :
-        console.log('goodbye again');
+// (newNum == 0) ?
+//     console.log('Hello') :
+//     (newNum < 0) ? console.log('hi') :
+//         console.log('goodbye again');
 
 
 
-let numOne = 1;
-let numTwo = 2;
-let value = ((numOne + numTwo) > 1) ? (numOne + numTwo) : 0;
-console.log(value);
+// let numOne = 1;
+// let numTwo = 2;
+// let value = ((numOne + numTwo) > 1) ? (numOne + numTwo) : 0;
+// console.log(value);

@@ -70,6 +70,10 @@ Operators
 
 // r /= 3; // r = r / 3
 
-r %= 1
-console.log(3 % 2);
+// r %= 1
+// console.log(3 % 2);
+
+// Exponential
+//  r **= 1;
+ 
 
