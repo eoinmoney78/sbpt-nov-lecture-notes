@@ -48,27 +48,44 @@
 // Create a capitalize function
 
 //     Declare a function named capitalize passing in string as it's argument.
+
 //     Within the capitalize code block, initialize a firstLetter variable and assign it the value of our string's first index.
+
+
+
 //     Within the capitalize code block, initialize a restOfWord variable and assign it the value of the rest of our strings indexes.
+
+
+
 //     Within the capitalize code block, make the firstLetter variable uppercase, make the restOfWord variable lowercase, concatenate the resulting strings and assign them to a fullWord variable.
+
+
 //     Print the fullWord variable.
 
 
 
-function shouter(someString) {
-    let loudString = someString.toUpperCase;
-    console.log(loudString);
-}
-shouter('monkey');
+// function shouter(someString) {
+//     let loudString = someString.toUpperCase;
+//     console.log(loudString);
+// }
+// shouter('monkey');
 
 
 function shouter(someString) {
-    let firstLetter = someString.toUpperCase();
-    let restOfWord = 
-    // console.log(firstLetter);
-    return firstLetter + '!!';
+
+    let firstLetter = someString.charAt(0).toUpperCase();
+
+    let restOfWord = someString.toLowerCase().slice(1);
+    let lunch = someString.charAt(0).slice(1).toUpperCase();
+
+
+
+    let fullWord = `${firstLetter}${restOfWord}${lunch}`;
+
+    return fullWord;
 }
-console.log(shouter("bing bong"));
+console.log(shouter('over and over and over again.!!!'));
+console.log(shouter('tomato bacon lettuce and mayonnaise'));
 
 
 

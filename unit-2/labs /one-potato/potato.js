@@ -8,7 +8,7 @@ function potatoPoem() {
     let count = 0;
 
 
-    while (count < 60) {
+    while (count < 100) {
         count++;
         if (count == 8) {
             console.log('More!');

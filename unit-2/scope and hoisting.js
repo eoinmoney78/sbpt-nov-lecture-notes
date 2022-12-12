@@ -89,5 +89,5 @@ function b() {
 newFunction();
 
 let newFunction = () => {
-    console.log("hoisted");
+    console.log("hoisted")
 }

@@ -103,11 +103,11 @@ order('salad', 8);
 order()
 
 function  shouter (someString) {
-let firstLetter = someString.indexOf();
+let firstLetter = someString.charAt(0);
 // console.log(firstLetter);
 return firstLetter + '!!';
 } 
-console.log(shouter("rat fuck"));
+console.log(shouter("ratty wen to town"));
 
 
 
