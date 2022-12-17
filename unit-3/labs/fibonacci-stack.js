@@ -51,21 +51,20 @@
 // Create the series variable
 let series = [0, 1];
 
-while (series.length <= [9]) {
-    let num1 = series[series.length - 1];
-    let num2 = series[series.length - 2];
-    let sum = num1 + num2;
-    series.push(sum);
+while (series.length >= 10) {
+    series.pop();
+    series.pop();
+    console.log(series.length);
 
 
 
 }
-
-
-
-
-
 console.log(series);
+
+
+
+
+
 
 
 

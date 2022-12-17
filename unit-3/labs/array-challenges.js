@@ -50,7 +50,7 @@ Object.entries(movies).forEach(([key, value]) => {
 });
 
 
-if(arr instanceof Array) {
+if (arr instanceof Array) {
     let reversed = arr.reverse();
     console.log(reversed);
 } else {
@@ -75,6 +75,6 @@ let movies = [
 // movies.forEach(item => console.log("For Each: ", item));
 movies.push("Batman");
 // movies.forEach(item => console.log("For Each: ", item));
-movies.splice(2,1,"Tennat");
+movies.splice(2, 1, "Tennat");
 movies.forEach(item => console.log("For Each: ", item));
 

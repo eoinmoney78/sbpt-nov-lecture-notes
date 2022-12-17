@@ -49,23 +49,23 @@
 // food.push('pizza');
 // console.log('push: ', food); // adds to the end of array
 
-let food = [
-    'pecan pie', 'Shrimp', 'Quesadilla', 'cheese cake', 'hot dog'
-];
+// let food = [
+//     'pecan pie', 'Shrimp', 'Quesadilla', 'cheese cake', 'hot dog'
+// ];
 
-// // ? .slice()
-food.splice(1, 1, 'Tacos'); // splice (where , how to remove,what to replace)
-console.log('Splice: ', food);
+// // // ? .slice()
+// food.splice(1, 1, 'Tacos'); // splice (where , how to remove,what to replace)
+// console.log('Splice: ', food);
 
-food.splice(1, 0, 'Steak');
-console.log('Splice 2:', food);
+// food.splice(1, 0, 'Steak');
+// console.log('Splice 2:', food);
 
 
 // //? .pop 
 
 
-food.pop();           // removes value from the end of array.
-console.log('pop: ', food);
+// food.pop();           // removes value from the end of array.
+// console.log('pop: ', food);
 
 // //? .shift()
 // food.shift();
@@ -97,16 +97,16 @@ console.log('pop: ', food);
 
 */
 
-let fruits = [
-    'apple', 'pear', 'mango', 'orange', 'pineapple'
-];
+// let fruits = [
+//     'apple', 'pear', 'mango', 'orange', 'pineapple'
+// ];
 
-let filteredFruit = fruits.filter(fruit => {
-    let result = fruit !== 'mango';
-    console.log('Result:', result);
-    return result;
-});
-console.log(filteredFruit);
+// let filteredFruit = fruits.filter(fruit => {
+//     let result = fruit !== 'mango';
+//     console.log('Result:', result);
+//     return result;
+// });
+// console.log(filteredFruit);
 
 
 
@@ -232,25 +232,189 @@ console.log(filteredFruit);
 
 
 //* map vs forEach
-let mainArr = [1, 2, 3, 4];
+// let mainArr = [1, 2, 3, 4];
 
-let forEachSample = mainArr.forEach(i => i);
-console.log(forEachSample);
+// let forEachSample = mainArr.forEach(i => i);
+// console.log(forEachSample);
 
-let mapSample = mainArr.map(i => i);
-console.log(mapSample);
+// let mapSample = mainArr.map(i => i);
+// console.log(mapSample);
 
 
 //? .find()
 
-let tmnt = [
-    'Mikey', 'Donnie', 'Leo', 'Raph', 'Splinter', 'Shredder', 'Baxter'
-];
-let character = 'Leo';
-console.log('Find: ', tmnt.find(c => c === character));
+// let tmnt = [
+//     'Mikey', 'Donnie', 'Leo', 'Raph', 'Splinter', 'Shredder', 'Baxter'
+// ];
+// let character = 'Leo';
+// console.log('Find: ', tmnt.find(c => c === character));
 
-character = 'April';
-console.log('Find: ', tmnt.find(c => c === character));
+// character = 'April';
+// console.log('Find: ', tmnt.find(c => c === character));
 
-character = 'Splinter';
-tmnt.find((c, i) => console.log("character: ", c === character, "index", i));
+// character = 'Splinter';
+// tmnt.find((c, i) => console.log("character: ", c === character, "index", i));
+
+
+// ! Array Destructuring
+/* 
+    - Allows us to unpack values from arrays into distinct variables.
+    - Similar syntax as array literals, but the square brackets are on the left of the assignment operator (=)
+    - Great way to pull info from array and assign to own variable.
+*/
+
+// const fullName = ['Jane', 'Doe'];
+// // const firstName = fullName[0];
+// // const lastName = fullName[1];
+// // console.log(firstName, lastName);
+
+// let [firstName, lastName] = fullName;
+// console.log(firstName);
+// console.log(lastName);
+
+// firstName = "John";
+// console.log(firstName);
+
+
+// ! Spread Operator
+/* 
+?   Concept of the Spread Operator - NOT the syntax:
+
+    const fullName = ['Rocket', 'Racoon'];
+
+    ...fullName  // 'Rocket', 'Racoon'
+    const elements = ...fullName;
+    const elements = "Rocket", 'Racoon
+*/
+// const fullName = ['Jane', 'Doe'];
+
+// const copiedFullName = [...fullName];
+// console.log('Copied: ', copiedFullName);
+// const copiedFullName2 = [fullName];
+// console.log('Copied 2: ', copiedFullName2);
+
+// let numberArray = []
+
+// for (i = 0; i < 20; i++) {
+//     numberArray.push(i);
+// };
+
+// console.log(numArray);
+// let newNumberArray = [...numberArray];
+// console.log(newNumberArray);
+
+
+// let [ firstName, lastName ] = fullName;
+// console.log(firstName);
+// console.log(lastName);
+
+// firstName = "John";
+// console.log(firstName);
+
+//* Spread Operator
+/* 
+?   Concept of the Spread Operator - NOT the syntax:
+
+    const fullName = ['Rocket', 'Racoon'];
+
+    ...fullName  // 'Rocket', 'Racoon'
+    const elements = ...fullName;           <---
+    const elements = 'Rocket', 'Racoon' // is this
+
+* Denoted by three consecutive periods: ...ARRAY
+*/
+
+// const fullName = ['Jane', 'Doe'];
+
+// const copiedFullName = [...fullName];
+// // console.log('Copied: ', copiedFullName);
+// const copiedFullName2 = [fullName];
+// console.log('Copied 2: ', copiedFullName2);
+
+// let numberArray = []
+
+// for(i = 0; i < 20; i++){
+//     numberArray.push(i);
+// };
+
+// console.log(numberArray);
+// let newNumberArray = [...numberArray];
+// console.log(newNumberArray);
+
+// fullName.push('Mrs.');
+// console.log('Full Name: ', fullName);
+// console.log('Copied Name: ', copiedFullName);
+
+// //* with Numbers
+// console.log(Math.min(1, 5, -3));
+
+// const prices = [10.99, 5.99, 3.99, 5.59];
+// // console.log(Math.min(prices));
+// console.log(Math.min(...prices));
+
+//* Changing both the Original and Copied Array
+const persons = [
+    {
+        name: 'Jane',
+        age: 28
+    },
+    {
+        name: 'John',
+        age: 35
+    }
+]
+
+// const copiedPersons = persons.map(person => ({
+//     name: person.name,
+//     age: person.age
+// }));
+const copiedPersons = [...persons];
+persons.push({ name: 'Anna', age: 29 });
+copiedPersons[0].name = "Sue";
+
+console.log('Persons: ', persons);
+console.log('Copied Persons: ', copiedPersons);
+
+
+//* Variables within Memory
+
+let x = 10;
+let y = 'abc';
+let z = null;
+
+
+let a = x;
+let b = y;
+
+a = 5;
+b = 'def';
+console.log(x, y, a, b);
+
+
+let arr = [];
+arr.push(1);
+
+let reference = [1];
+let refCopy = reference;
+
+
+// *  Rest Syntax
+/* 
+
+-- looks exactly like spread syntax
+--spread -> 'expands' an array
+-rest -> "condenses" an array
+
+
+
+*/
+
+
+const fullNameAgain = ['Jane', 'Doe', "Mrs.", {
+    month: 03, date: 22, year: 1973
+}, 2, 'test', '4', true, false];
+
+const [newFirst, newLast, ...moreInfo] = fullNameAgain;
+console.log(newFirst);
+console.log(newLast);
+console.log(moreInfo);
