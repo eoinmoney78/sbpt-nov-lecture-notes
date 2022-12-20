@@ -39,6 +39,7 @@ function titleize(someThing) {
     let newArray = someThing.split(" ");
     newArray.map(shouter);
     let result = newArray.map(shouter);
+    console.log(result);
     result.join("  ");
 
 }

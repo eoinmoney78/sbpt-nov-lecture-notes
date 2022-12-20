@@ -418,3 +418,8 @@ const [newFirst, newLast, ...moreInfo] = fullNameAgain;
 console.log(newFirst);
 console.log(newLast);
 console.log(moreInfo);
+
+newFirst = "alex"; // reassigned
+console.log(newFirst);
+moreInfo[1] = 5;
+console.log('updated rest:', moreInfo);
