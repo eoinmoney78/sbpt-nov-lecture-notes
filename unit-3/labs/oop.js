@@ -84,5 +84,5 @@ console.log(`With a tip of $${dinnerBill.tip.toFixed(2)}!`);
 //* Polymorphism
 /* 
     How objects respond in relationship from child to parent. 
-    Can't access properties of sil
+    Can't access properties of siblings (like methods)
 */

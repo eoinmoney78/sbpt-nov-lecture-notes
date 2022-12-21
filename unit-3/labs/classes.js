@@ -135,5 +135,6 @@ class Expense {
 }
 let itemToSell = Expense.addUpChargeForProfit(1);
 console.log(itemToSell);
-let anotherItemtoSell = Expense.addUpchargeForProfit(2);
-console.log(anotherItemtoSell);
+
+
+let anotherItemtoSell = 

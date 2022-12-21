@@ -59,7 +59,7 @@ let menu = {
     Burger: "$5.00",
     Fries: "$3.50",
     Shake: "$1.11",
-    Salad: "$4.25",
+    Salad: "$4.25"
 }
 menu.order.key = function (orderPlaced) {
     let orderSplit = menu.map();

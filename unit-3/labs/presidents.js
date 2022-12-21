@@ -62,7 +62,7 @@ for (i in presidents) {
 // Create a list of all presidents that are alive.
 
 let userFullnames = presidents.map(function (element, value) {
-    return `${element.first} ${element.last} ${element. != passed} `;
+    return `${element.first} ${element.last} ${element.passed } `;
 })
 
 console.log(userFullnames);

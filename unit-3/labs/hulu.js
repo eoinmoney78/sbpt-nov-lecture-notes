@@ -39,7 +39,7 @@ JS
 
 
 let hulu = {
-   
+
     id: 1,
 
     movies: {
@@ -64,8 +64,8 @@ let hulu = {
     }
 
 }
-shows:{
-    title:[
+shows: {
+    title: [
         {
 
         }

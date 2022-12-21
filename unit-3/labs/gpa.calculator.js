@@ -60,18 +60,35 @@
 
 //     Set the program up to receive all values necessary for the grades Object as input to the console. Assign the values to the interior of grades as appropriate.
 let grades = {
-  midterm: 3.3,
-  project: 4.0,
-  final: 3.2
-}
 
-function gpa(someGrades, object) {
+  midterm: {
+    grade: 3.3,
+    weight: 1
+  },
+  project: {
+    grade: 4.0,
+    weight: 1
+  },
+  final: {
+    grade: 3.2,
+    weight: 1
+  }
+}
+// should print: 'The final GPA is 3.425'
+
+
+
+
+
+let gradeSum = 0;
+let weightSum = 0;
+
+function gpa(object) {
   // write your code here
-  let gradesToWeight = object.keys(obj);
-  let gradeSum = 0;
-  let weightDSum = 0;
+  let gradesToWeight = object.keys();
   gradesToWeight.forEach(key);
+  console.log(gradesToWeight);
+
 }
 
 console.log('The final GPA is ' + gpa(grades));
-  // should print: 'The final GPA is 3.425'

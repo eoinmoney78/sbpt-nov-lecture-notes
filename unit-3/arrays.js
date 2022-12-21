@@ -12,14 +12,6 @@
            using a property "length", we can find the sum of data stored.
 */
 
-// let list = ['milk', 'bread', 'chicken'];
-
-// console.log(list[2]);
-
-// console.log(list[list.length - 2]);
-// list[0] = 'chocolate milk';
-// console.log(list);
-
 
 // let avengers = [
 //     //*    0     1    2      3        4          
@@ -41,6 +33,14 @@
 
 // // ? .push() 
 
+// let food = ['milk', 'bread', 'chicken'];
+
+// console.log(food[2]);
+
+// console.log(food[food.length - 2]);
+// food[0] = 'chocolate milk';
+// console.log(list);
+
 // for (item of food) {
 //     console.log(item);
 // }
@@ -54,11 +54,26 @@
 // ];
 
 // // // ? .slice()
-// food.splice(1, 1, 'Tacos'); // splice (where , how to remove,what to replace)
+// food.splice(3, 1, 'Tacos'); // splice (where , how to remove,what to replace)
 // console.log('Splice: ', food);
 
 // food.splice(1, 0, 'Steak');
 // console.log('Splice 2:', food);
+
+
+
+
+// let food2 = ['rice', 'noodles', 'chicken', 'hotdogs'];
+// food2.slice(1, 1, "peppers")
+// console.log('splice: ', food2);
+// food2.pop();
+// food2.pop();
+// console.log(food2);
+// food2.push();
+// console.log('push: ', food2);
+// food2.push("cookie");
+// console.log("String: ", food2.toString());
+
 
 
 // //? .pop 
@@ -109,6 +124,17 @@
 // console.log(filteredFruit);
 
 
+// let jam = [
+//     'apple', 'pear', 'gooseberry', 'strawberry'
+// ];
+
+// let filteredJam = jam.filter(jam => {
+//     let result = jam !== 'mango';
+//     console.log('Result: ', result);
+//     return result;
+// })
+
+
 
 // How can i remove any fruit that has teh word "apple" in it?
 
@@ -131,7 +157,7 @@
 //     'apple', 'pear', 'mango', 'orange', 'pineapple'
 // ];
 
-// How can I use a filter to remove the mango?
+// How can I use a filter to remove the mango ?
 
 // let filteredFruit = fruits.filter(fruit => {
 //     let result = fruit !== 'mango';
@@ -141,7 +167,7 @@
 
 // console.log(filteredFruit);
 
-// How can I remove any fruit that has the word "apple" in it?
+// How can I remove any fruit that has the word "apple" in it ?
 // let fruit1 = 'pineapple';
 // console.log('Includes: ', fruit1.includes('apple'));
 
@@ -191,7 +217,14 @@
 // newFoodList.forEach(item => console.log('For each: ', item));
 
 
-// newFoodList.forEach((item, i) => console.log('For each w index: ', item, i));
+// let honeyBooBoo = [
+//     'june-bug', 'BooBoo', 'snake', 'rat-face'
+// ];
+// for (let i = 0; i < honeyBooBoo.length; i++) {
+//     console.log(honeyBooBoo);
+// }
+// honeyBooBoo.forEach(item => console.log(('For Each: ', item)));
+// honeyBooBoo.forEach((item, i) => console.log('For each w index: ', item, i));
 
 
 // newFoodList.forEach(function (item) {
@@ -230,6 +263,23 @@
 // console.log(fizzBuzzArray);
 
 
+// let sumArray = [];
+// let jackAssArray = [];
+// for (let i = 0; i < 101; i++) {
+//     sumArray.push(i);
+// };
+// console.log(sumArray);
+
+// sumArray.map(x => {
+//     if (x % 15 === 0) {
+//         jackAssArray.push(x);
+//     } else if (x % 3 === 0) {
+//         jackAssArray.push('jack');
+//     } else if (x % 5 === 0) {
+//         jackAssArray.push('Ass');
+//     }
+// })
+// console.log(jackAssArray);
 
 //* map vs forEach
 // let mainArr = [1, 2, 3, 4];
@@ -255,18 +305,66 @@
 // character = 'Splinter';
 // tmnt.find((c, i) => console.log("character: ", c === character, "index", i));
 
+// let metallica = [
+//     'James', 'Lars', 'Kirk', 'Robert'
+// ];
+
+// let bandMember = 'James';
+// console.log('Find: ', metallica.find(m => m === bandMember));
+// bandMember = 'Lars';
+// console.log('Find : ', metallica.find(m => m === bandMember));
+// bandMember = 'Kirk';
+// metallica.find((m, i) => console.log('Band Member: ', m === bandMember, 'index', i));
+
+
+
+// const array1 = [5, 12, 8, 130, 44];
+
+// const found = array1.find(element => element > 40);
+
+// console.log(found);
+
+
+// const array2 = ['spider', 'snake', 'frog', 'bat'];
+// const found2 = array2.find(element => element);
+// console.log(found2);
+
+// const inventory = [
+//     { name: "apples", quantity: 2 },
+//     { name: "bananas", quantity: 0 },
+//     { name: "cherries", quantity: 5 },
+// ];
+
+// function isCherries(fruit) {
+//     return fruit.name === "cherries";
+// }
+
+// console.log(inventory.find(isCherries));
+
+// const inventory = [
+//     { name: "apples", quantity: 2 },
+//     { name: "bananas", quantity: 0 },
+//     { name: "cherries", quantity: 5 },
+// ];
+
+// const result = inventory.find(({ name }) => name === "bananas");
+
+// console.log(result); // { name: 'cherries', quantity: 5 };
+
+
+
 
 // ! Array Destructuring
-/* 
+/*
     - Allows us to unpack values from arrays into distinct variables.
     - Similar syntax as array literals, but the square brackets are on the left of the assignment operator (=)
     - Great way to pull info from array and assign to own variable.
 */
 
-// const fullName = ['Jane', 'Doe'];
-// // const firstName = fullName[0];
-// // const lastName = fullName[1];
-// // console.log(firstName, lastName);
+// const fullName = ['Eoin', 'Noonan'];
+// // // const firstName = fullName[0];
+// // // const lastName = fullName[1];
+// // // console.log(firstName, lastName);
 
 // let [firstName, lastName] = fullName;
 // console.log(firstName);
@@ -277,7 +375,7 @@
 
 
 // ! Spread Operator
-/* 
+/*
 ?   Concept of the Spread Operator - NOT the syntax:
 
     const fullName = ['Rocket', 'Racoon'];
@@ -293,15 +391,13 @@
 // const copiedFullName2 = [fullName];
 // console.log('Copied 2: ', copiedFullName2);
 
-// let numberArray = []
+// let numArray = [1, 4, 5, 7]
 
 // for (i = 0; i < 20; i++) {
-//     numberArray.push(i);
+//     numArray.push(i);
 // };
 
 // console.log(numArray);
-// let newNumberArray = [...numberArray];
-// console.log(newNumberArray);
 
 
 // let [ firstName, lastName ] = fullName;
@@ -312,7 +408,7 @@
 // console.log(firstName);
 
 //* Spread Operator
-/* 
+/*
 ?   Concept of the Spread Operator - NOT the syntax:
 
     const fullName = ['Rocket', 'Racoon'];
@@ -333,7 +429,7 @@
 
 // let numberArray = []
 
-// for(i = 0; i < 20; i++){
+// for (i = 0; i < 20; i++) {
 //     numberArray.push(i);
 // };
 
@@ -349,7 +445,7 @@
 // console.log(Math.min(1, 5, -3));
 
 // const prices = [10.99, 5.99, 3.99, 5.59];
-// // console.log(Math.min(prices));
+// // // console.log(Math.min(prices));
 // console.log(Math.min(...prices));
 
 //* Changing both the Original and Copied Array
@@ -362,12 +458,9 @@ const persons = [
         name: 'John',
         age: 35
     }
-]
+];
 
-// const copiedPersons = persons.map(person => ({
-//     name: person.name,
-//     age: person.age
-// }));
+
 const copiedPersons = [...persons];
 persons.push({ name: 'Anna', age: 29 });
 copiedPersons[0].name = "Sue";
@@ -376,30 +469,30 @@ console.log('Persons: ', persons);
 console.log('Copied Persons: ', copiedPersons);
 
 
-//* Variables within Memory
+// //* Variables within Memory
 
-let x = 10;
-let y = 'abc';
-let z = null;
-
-
-let a = x;
-let b = y;
-
-a = 5;
-b = 'def';
-console.log(x, y, a, b);
+// let x = 10;
+// let y = 'abc';
+// let z = null;
 
 
-let arr = [];
-arr.push(1);
+// let a = x;
+// let b = y;
 
-let reference = [1];
-let refCopy = reference;
+// a = 5;
+// b = 'def';
+// console.log(x, y, a, b);
+
+
+// let arr = [];
+// arr.push(1);
+
+// let reference = [1];
+// let refCopy = reference;
 
 
 // *  Rest Syntax
-/* 
+/*
 
 -- looks exactly like spread syntax
 --spread -> 'expands' an array
@@ -410,16 +503,16 @@ let refCopy = reference;
 */
 
 
-const fullNameAgain = ['Jane', 'Doe', "Mrs.", {
-    month: 03, date: 22, year: 1973
-}, 2, 'test', '4', true, false];
+// const fullNameAgain = ['Jane', 'Doe', "Mrs.", {
+//     month: 03, date: 22, year: 1973
+// }, 2, 'test', '4', true, false];
 
-const [newFirst, newLast, ...moreInfo] = fullNameAgain;
-console.log(newFirst);
-console.log(newLast);
-console.log(moreInfo);
+// const [newFirst, newLast, ...moreInfo] = fullNameAgain;
+// console.log(newFirst);
+// console.log(newLast);
+// console.log(moreInfo);
 
-newFirst = "alex"; // reassigned
-console.log(newFirst);
-moreInfo[1] = 5;
-console.log('updated rest:', moreInfo);
+// newFirst = "alex"; // reassigned
+// console.log(newFirst);
+// moreInfo[1] = 5;
+// console.log('updated rest:', moreInfo);
