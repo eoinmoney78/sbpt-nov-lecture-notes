@@ -62,12 +62,18 @@
 // let arr = ['This', 'can', 'be ', 'really', 'cool']
 // function newArray() {
 //     for (i = 0; i < 4; i++) {
-//         console.log(arr);
+//         console.log(arr.join(" "));
 //     }
 // }
 // newArray();
 
 
+let Array = ['ham', 'cheese', 'turkey' , 'bacon'];
+function  newArray () {
+  for (a of Array) {
+    console.log(a);
+  }
+}newArray();
 
 
 
@@ -75,6 +81,12 @@
 
 
 
+Structure :
+  function fncName(parameter ){
+      console.log(`hi ${parameter}`);
+
+  }
+fncName("paul");
 //!  parameters 
 /*
   Structure :
@@ -90,24 +102,24 @@ fncName("paul");
 3> This is where we define what that para values will be
  */
 
-function order(ticket, total) {
-    console.log(`i exchanged my ticket for a ${ticket}. it cost ${total} dollars.`);
-}
-order('cheese pizza', 20);
-order('soup', 3);
-order('salad', 8);
+// function order(ticket, total) {
+//     console.log(`i exchanged my ticket for a ${ticket}. it cost ${total} dollars.`);
+// }
+// order('cheese pizza', 20);
+// order('soup', 3);
+// order('salad', 8);
 
 
 
 
-order()
+// order()
 
-function  shouter (someString) {
-let firstLetter = someString.charAt(0);
-// console.log(firstLetter);
-return firstLetter + '!!';
-} 
-console.log(shouter("ratty wen to town"));
+// function  shouter (someString) {
+// let firstLetter = someString.charAt(0);
+// // console.log(firstLetter);
+// return firstLetter + '!!';
+// } 
+// console.log(shouter("ratty wen to town"));
 
 
 
@@ -198,20 +210,20 @@ Not declarations
 
 //* concise Body
 
-// let goodBye = () => console.log('goodBye');
-// goodBye();
+let goodBye = () => console.log('goodBye');
+goodBye();
 
-// let total = () => 2 + 2;
-// let isFour = total();
-// console.log(isFour);
+let total = () => 2 + 2;
+let isFour = total();
+console.log(isFour);
 
-//* Block Body
+ Block Body
 
-// let apples = qty => {
-//     return `there are ${qty} apples.`
-// };
-// let appleCount = apples(4);
-// console.log(appleCount);
+let apples = qty => {
+    return `there are ${qty} apples.`
+};
+let appleCount = apples(4);
+console.log(appleCount);
 
 
 // same function as concise body 
@@ -222,12 +234,12 @@ Not declarations
 
 // multiple prams
 
-// let calc = (x, y) => x + y;
-// console.log(calc(3, 4));
-// let calc2 = (x, y) => {
-//     return x + y;
-// }
-// console.log(calc(3, 4));
+let calc = (x, y) => x + y;
+console.log(calc(3, 4));
+let calc2 = (x, y) => {
+    return x + y;
+}
+console.log(calc(3, 4));
 
 //* IIFE
 

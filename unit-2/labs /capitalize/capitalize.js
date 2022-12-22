@@ -88,6 +88,12 @@ console.log(shouter('over and over and over again.!!!'));
 console.log(shouter('tomato bacon lettuce and mayonnaise'));
 
 
+function stop(gang) {
+    let firstLetter = gang.charAt();
+    
+}
+
+
 
 // function sing(song) {
 //     console.log(song);

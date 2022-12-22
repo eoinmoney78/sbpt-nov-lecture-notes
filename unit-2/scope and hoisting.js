@@ -6,20 +6,20 @@
 // } checkGlobalVariable();
 
 
-// let x = 12;
-// function scope() {
-//     let x = 33;
-//     console.log(x);
-// }
-// scope();
-// console.log(x);
+let x = 12;
+function scope() {
+    let x = 33;
+    console.log(x);
+}
+scope();
+console.log(x);
 
-// let y = 12;
-// function newScope() {
-//     y = 33;
-//     console.log(y);
-// } newScope();
-// console.log(y);
+let y = 12;
+function newScope() {
+    y = 33;
+    console.log(y);
+} newScope();
+console.log(y);
 
 
 //! Var vs Let
@@ -47,7 +47,7 @@
 // console.log(`var - Outside function: ${(a)}`);
 
 
-// let scoped to enclosing=block
+// let scoped to enclosing = block
 
 // let b = 12;
 // function letTest() {

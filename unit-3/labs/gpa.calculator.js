@@ -83,11 +83,11 @@ let grades = {
 let gradeSum = 0;
 let weightSum = 0;
 
-function gpa(object) {
+function gpa(object) {    //  1.  gpa function
   // write your code here
-  let gradesToWeight = object.keys();
+  let gradesToWeight = object(object.keys());   // 2.
   gradesToWeight.forEach(key);
-  console.log(gradesToWeight);
+
 
 }
 
