@@ -192,7 +192,7 @@
 
 
 
-// !       Challenge 
+// !       Challenge  online cart..........
 
 // const firstCart = [4.50, 3.25, 14.99, 25.99, 42.99];
 
@@ -219,3 +219,44 @@
 // console.log(`Total: $ ${total.toFixed(2)}`)
 // calcShoppingCart(secondCart);
 // console.log(`Total: $${total.toFixed(2)}`);
+
+// !               Factory Functions
+
+// const circle = {
+//     radius: 1,
+//     location: {
+//         x: 1,
+//         y: 1
+//     },
+//     isVisible: true,
+//     draw: function () {
+//         console.log('draw');
+//     }
+
+
+// };
+
+
+function createCircle(radius) {
+    return {
+        radius,
+
+        draw() {
+
+            console.log('draw');
+        }
+
+    };
+}
+
+const myCircle = createCircle(1);
+
+//   Constructor Function
+
+function Circle(radius) {
+    this.radius = radius;
+    this.draw = function () {
+        console.log('draw');
+    }
+}
+const circle = new Circle(1);

@@ -61,7 +61,7 @@ let menu = {
     Shake: "$1.11",
     Salad: "$4.25"
 }
-menu.order.key = function (orderPlaced) {
+menu.order.keys() = function (orderPlaced) {
     let orderSplit = menu.map();
     console.log(orderSplit);
 }; console.log(orderPlaced());
