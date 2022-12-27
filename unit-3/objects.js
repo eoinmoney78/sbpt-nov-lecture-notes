@@ -25,26 +25,26 @@
     Are dictionaries
    */
 
-// let theSimpsons = {
-//     id: 1,
-//     est: 1989,
-//     genre: 'animated',
-//     seasons: {
-//         "season one": [
-//             {
-//                 episode_title: 'Simpson Roasting on an Open Fire',
-//                 aired: '1989-12-17',
-//             },
-//             {
-//                 episode_title: 'Bart the Genius',
-//                 aired: '1990-01-01',
-//             },
-//         ],
-//         'season two': [/* .... */],
-//         "season three": [/* .... */]
-//     },
-//     currently_running: true,
-// }
+let theSimpsons = {
+    id: 1,
+    est: 1989,
+    genre: 'animated',
+    seasons: {
+        "season one": [
+            {
+                episode_title: 'Simpson Roasting on an Open Fire',
+                aired: '1989-12-17',
+            },
+            {
+                episode_title: 'Bart the Genius',
+                aired: '1990-01-01',
+            },
+        ],
+        'season two': [/* .... */],
+        "season three": [/* .... */]
+    },
+    currently_running: true,
+}
 
 
 // //* Dot notation & square Brackets

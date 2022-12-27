@@ -33,6 +33,16 @@
 //     After the initial key: value pairs inside of menu, create a method named order.
 //     Hint: The key is order and the value is the function the method will run.
 //     order's anonymous function should take the parameter orderPlaced.
+let menu = {
+    Burger: "$5.00",
+    Fries: "$3.50",
+    Shake: "$1.11",
+    Salad: "$4.25"
+}
+menu.order.keys() = function (orderPlaced) {
+    let orderSplit = menu.map();
+    console.log(orderSplit);
+}; console.log(orderPlaced());
 
 // Build the method order
 
@@ -55,13 +65,3 @@
 // Going Further
 
 //     What if an order is placed that contains an item not on the menu? Create error handling for this scenario.
-let menu = {
-    Burger: "$5.00",
-    Fries: "$3.50",
-    Shake: "$1.11",
-    Salad: "$4.25"
-}
-menu.order.keys() = function (orderPlaced) {
-    let orderSplit = menu.map();
-    console.log(orderSplit);
-}; console.log(orderPlaced());
