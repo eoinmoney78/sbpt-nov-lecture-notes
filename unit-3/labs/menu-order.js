@@ -38,11 +38,14 @@ let menu = {
     Fries: "$3.50",
     Shake: "$1.11",
     Salad: "$4.25"
-}
-menu.order.keys() = function (orderPlaced) {
-    let orderSplit = menu.map();
-    console.log(orderSplit);
-}; console.log(orderPlaced());
+};
+
+function order(orderPlaced) {
+    let orderSplit = orderPlaced.split();
+    for (let item of orderSplit)
+        console.log(item);
+};
+console.log(order());
 
 // Build the method order
 

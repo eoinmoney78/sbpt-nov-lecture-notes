@@ -24,21 +24,22 @@ let grades = {
 }
 // should print: 'The final GPA is 3.425'
 
-console.log(grades[0]);
+console.log(grades);
 
 
 
 let gradeSum = 0;
 let weightSum = 0;
 
-function gpa(object) {    //  1.  gpa function
-  // write your code here
-  let gradesToWeight = Object.values(object);  // 2.
+function gpa(object) {
+  let gradesToWeight = Object.value();  // 2.
 
-  // console.log(object.key);
-  gradesToWeight.forEach(value);
-  gradeSum = [Object.value(object)];
-  console.log(gradeSum);
+  console.log(gradesToWeight);
+  gradesToWeight.forEach(function (value) {
+
+
+  });
+
 
 
 
@@ -52,5 +53,5 @@ function gpa(object) {    //  1.  gpa function
 
 
 }
-
+console.log(gpa());
 console.log('The final GPA is ' + gpa(grades));
