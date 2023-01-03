@@ -28,4 +28,8 @@
 
 - Helps with labels and "partnered" input fields
 - `type` notes what type of data to expect
-  - Text, passwords, date, numbers, e
+  - Text, passwords, date, numbers, etc.
+  ````placeholder````` provides notes to user as to what might be 'good input.
+
+```` Value````` is what is held within the input when submitted 
+-This gets populated when a user types into it (depending on the field)// 
