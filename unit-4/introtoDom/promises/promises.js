@@ -93,3 +93,15 @@ returnData()
     .catch(function (err) {
         console.error(err);
     });
+
+
+/*
+*   The Process
+      - Creating a new Promise
+          - resolve / reject are parameters of a callback function
+      - setTimeout is acting our "waiting" for a resource.
+      - resolve() or reject() said promise.
+      - When returned, returns a Promise - not a string
+      - use of resolvers (.then() / .catch()) with callbacks to extropolate the info from that promise.
+*/
+
