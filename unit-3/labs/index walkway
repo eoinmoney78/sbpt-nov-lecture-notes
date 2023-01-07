@@ -1,0 +1,196 @@
+Files
+Tools
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+▼
+▼
+▼
+▼
+▼
+▼
+▼
+class Location {
+  // your code here
+  constructor(name, description) {
+    this.name = name
+    this.description = description
+  }
+
+}
+
+let home = new Location('home', 'you are at your house');
+let sidewalk = new Location('sidewalk', 'you are on the sidewalk');
+let store = new Location('store', 'you are at the store');
+
+let locationCurrent = "home";
+
+let locationLookUp = {
+  home: home,
+  sidewalk: sidewalk,
+  store: store
+};
+
+let locationStates = {
+  home: ['sidewalk'],
+  sidewalk: ['home', 'store'],
+  store: ['sidewalk']
+};
+
+console.log("You are at your " + locationCurrent)
+
+function moveLocation(newLocation) {
+  if (locationStates[locationCurrent].includes(newLocation)) {
+    locationCurrent = newLocation
+    console.log("You are at the " + locationLookUp[locationCurrent].name)
+  } else {
+    console.log("You cannot go to the " + newLocation + " from the " + locationCurrent)
+  }
+}
+
+moveLocation("sidewalk");
+// Prints 'You are on the sidewalk.'
+moveLocation("store");
+// Prints 'You are in the store.'
+moveLocation("sidewalk");
+// Prints 'You are on the sidewalk.'
+moveLocation("home");
+// Prints 'You are at your house.'
+
+moveLocation("park");
+// Prints 'You cannot go from sidewalk to park.'
+
+Line 1 : Col 1 (1210 chars)
+Instructions
+Walkway
+Objective
+
+In this lab we will create a program that represents a trip to the store and back.
+Learning
+
+In this lab, we will be utilizing state machines with lookup tables to handle transitions between Objects.
+
+We will create these Objects utilizing a Class constructor.
+
+Topics:
+
+    Class construction
+    Objects
+    State machines
+    Lookup tables
+
+Links
+
+    Finite State Machines on Wikipedia
+    MDN Creating Classes
+    MDN Class Tutorial
+
+Achieving
+
+In this lab, we will create a piece of software that represents a trip to the corner store and back. This software will transfer the user between different states ("locations") and only allow state transitions between certain states.
+
+Your work will result in:
+
+    Location class constructor.
+    Three Objects of the Location class.
+    Variable that represents our initial state.
+    Lookup table that maps representative strings to their Objects.
+    State machine that maps states to the states they will accept in string format.
+    Console log describing the narrative setup.
+    moveLocation function that contains if...else logic to check if state transitions are valid within the state machine.
+    Multiple invocations of moveLocation to verify our states are transitioning correctly.
+
+Procedure
+Construct the Location class
+
+    Within Location's code block, create a constructor that takes name and description as its arguments.
+    Within the constructor's code block, map this.name to name and this.description to description.
+
+Define the Location Class Objects
+
+    Create a new home Object of the Location class. Pass in the name of the location and the description of the location to the constructor.
+    Repeat this process for two more Objects: sidewalk and store.
+
+Define the locationCurrent variable and the locationLookUp lookup table
+
+    Create the locationCurrent variable and assign it the value "home". This represents our initial state.
+    Create the locationLookUp table. This will be an Object consisting of key: value pairs wherein the key is a String that matches the exact names of our Objects.
+
+Define the locationStates state machine
+
+    Create the locationStates state machine. This will be an Object consisting of key: value pairs wherein the key is a state and the value is an array that contains its possible transitions as Strings.
+
+Inform the user of the opening scene
+
+    Create a console log that informs the user of the opening scene. "You are at your house." This will not be inside of a function.
+
+Create the moveLocation function
+
+    Inside of moveLocation, set up an if statement whose conditional logic checks if locationStates[locationCurrent] includes newLocation.
+    Inside of this if statement, set locationCurrent to now be newLocation.
+    Inside of this if statement, console log the name and description of locationCurrent by checking it in locationLookUp using bracket notation.
+    Outside of this if, else console log a message informing the user they cannot go from locationCurrent to newLocation.
+
+Invoke the moveLocation() function
+
+    Invoke moveLocation multiple times. Include states that should transition successfully and states that will fail to test your code.
+
+Review
+
+In this lab, we have practiced utilizing state machines combined with lookup tables to manipulate Objects. The software should:
+
+    Transition between successful states and inform users of the new state and its description.
+    If a transition fails, inform users that those states do not transition to each other.
+    Utilize narrative as a metaphor for what process is occurring.
+
+Going Further
+
+    Build out your narrative with more locations.
+    Add more properties to the constructor for Location class Objects to possess.

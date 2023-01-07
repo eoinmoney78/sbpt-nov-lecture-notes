@@ -69,8 +69,8 @@ let theSimpsons = {
 
 // //! Object Methods
 
-// //* Object.keys()
-// console.log("keys:", Object.keys(theSimpsons));
+//* Object.keys()
+console.log("keys: ", Object.keys(theSimpsons));
 
 // //* Object.values();
 // console.log('Values: ', Object.values(theSimpsons));
@@ -133,7 +133,7 @@ let theSimpsons = {
             [
                 '1989-12-17', "1990-01-14"
             ]
-        ], 
+        ],
         'season two': [/* .... */],
         "season three": [/* .... */]
     },

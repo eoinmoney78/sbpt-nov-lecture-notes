@@ -136,7 +136,7 @@
 
 
 
-// How can i remove any fruit that has teh word "apple" in it?
+// How can i remove any fruit that has the word "apple" in it?
 
 
 // //? .toString()
@@ -207,14 +207,14 @@
 
 */
 
-// let newFoodList = [
-//     'apple', 'pear', 'mushroom', 'cheese', 'peach',
-// ];
+let newFoodList = [
+    'apple', 'pear', 'mushroom', 'cheese', 'peach',
+];
 
-// for (let i = 0; i < newFoodList.length; i++) {
-//     console.log(newFoodList[i]);
-// }
-// newFoodList.forEach(item => console.log('For each: ', item));
+for (let i = 0; i < newFoodList.length; i++) {
+    console.log(newFoodList[i]);
+}
+newFoodList.forEach(item => console.log('For each: ', item));
 
 
 // let honeyBooBoo = [
