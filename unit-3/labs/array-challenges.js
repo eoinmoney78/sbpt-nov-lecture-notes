@@ -9,12 +9,12 @@
     - look in your notes to see how we can check if something is an array
 */
 
-let arr = [1, 2, 3, 4, 5];
+// let arr = [1, 2, 3, 4, 5];
 
 
-console.log(arr instanceof Array);
-arr.reverse();
-console.log(arr);
+// console.log(arr instanceof Array);
+// arr.reverse();
+// console.log(arr);
 
 
 /*
@@ -34,6 +34,8 @@ console.log(arr);
 - And replace one of your existing movies with another one.
     - Use .forEach() to list your movies
 */
+
+/*
 let movies = ['Dumb n dumber', 'they', 'the WaterBoy', 'Friday'];
 movies.push('Nowhere');
 console.log(movies);
@@ -42,6 +44,10 @@ console.log(movies);
 Object.entries(movies).forEach(([key, value]) => {
     console.log(key + ' ' + value)
 });
+
+
+
+
 
 movies.splice(1, 1, 'Now')
 console.log(movies);
@@ -59,14 +65,14 @@ if (arr instanceof Array) {
 
 //! .ForEach()
 /*
-    - (Go look at MDN docs to remind you):
-    - Create an array containing movies (4 qty)
-    - Use .forEach() to list your movies
-    - Add another movie at the end
-        - Use .forEach() to list your movies
-    - And replace one of your existing movies with another one.
-        - Use .forEach() to list your movies
-*/
+- (Go look at MDN docs to remind you):
+- Create an array containing movies (4 qty)
+- Use .forEach() to list your movies
+- Add another movie at the end
+- Use .forEach() to list your movies
+- And replace one of your existing movies with another one.
+- Use .forEach() to list your movies
+
 
 let movies = [
     'Bee Moive', "Horton Hears a Who", "The Grinch", "The Lorax"
@@ -77,4 +83,10 @@ movies.push("Batman");
 // movies.forEach(item => console.log("For Each: ", item));
 movies.splice(2, 1, "Tennat");
 movies.forEach(item => console.log("For Each: ", item));
+*/
 
+let player = ['messi', 'keane', 'ronaldo', 'pele'];
+player.push('henry')
+Object.entries(player).forEach(([key, value]) => {
+    console.log(key + ' ' + value)
+});

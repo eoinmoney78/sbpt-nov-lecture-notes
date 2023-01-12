@@ -33,3 +33,21 @@
     Additional Documentation:
     https://disneyapi.dev/
     */
+
+
+const url = "https://api.disneyapi.dev/characters";
+const randomNumber = Math.floor(Math.random() * 50);
+
+async function info(url, randomNumber) {
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        console.log(data[randomNumber]);
+        console.log(data[randomNumber].name);
+        console.log(data[randomNumber].imageURL);
+    } catch (error) {
+
+    }
+}
+
+info(url, randomNumber);

@@ -20,3 +20,42 @@
 -Read: GET
 -Update: PUT / PATCH
 -Delete: DELETE
+
+# # POSTMAN
+
+- Set Methods
+- Get / POST /PUT / DElete on routes
+  Body
+- raw
+- JSON - Make a JSON object
+
+## ## Preparing our server to handle JSON objects
+
+In our ```ap.js` we need to have this line of code
+
+```js
+app.use(express.json());
+```
+
+This provides us access to JSON files throughout our routes.
+
+## MVC
+
+- Model View Controller
+  -Architecture pattern that helps our separation of concerns
+  -View
+  -browser, Postman , ect....
+  -Applications that interface with our server.
+
+- Controller:
+- Part of the server application which handle logic.
+- Model:
+- Database schematic
+
+## Middleware
+
+- a function that accesses the rewquest and response
+  -Has a call stack:
+  -Request
+  -Response
+-
