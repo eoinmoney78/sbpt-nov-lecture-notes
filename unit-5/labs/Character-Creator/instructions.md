@@ -67,14 +67,14 @@ This is an in-class build where we are creating a quick server that covers the C
 | X      | Build GET One                    | `filter()` / `every()`                                    |
 | X      | Test Route                       | postman                                                   |
 | X      | Build GET All by Class           | `forEach()` / `filter()`                                  |
-|        | Consider conditions              |                                                           |
-|        | Test Route                       |                                                           |
-|        | Build POST One                   |                                                           |
-|        | Test Route                       |                                                           |
-|        | Build PUT One by ID              |                                                           |
-|        | Test Route                       |                                                           |
-|        | Build DELETE One by ID           |                                                           |
-|        | Test Route                       |                                                           |
+| X      | Consider conditions              | `toLowerCase()`                                           |
+| X      | Test Route                       | postman                                                   |
+| X      | Build POST One                   | `readFile()` & `writeFile()`                              |
+| X      | Test Route                       | postman                                                   |
+| X      | Build PUT One by ID              | `forEach((obj,id) )                                       |
+| X      | Test Route                       |                                                           |
+| X      | Build DELETE One by ID           | `filter(i => i.id !== id)`                                |
+| X      | Test Route                       |                                                           |
 
 ## Stretch Goals
 
