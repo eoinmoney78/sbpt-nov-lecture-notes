@@ -102,24 +102,3 @@ router.post('/login', async (req, res) => {
 
 
 module.exports = router;
-// const users = [{ email: 'new@example.com', password: 'password' }];
-
-
-// router.post('/login', async (req, res) => {
-//     try {
-//         const email = req.body.email;
-//         const password = req.body.password;
-
-//         // Check if the email and password match a user in the database
-//         const user = users.find(u => u.email === email && u.password === password);
-//         if (!user) {
-//             throw new Error('Incorrect email or password');
-//         }
-
-//         // If the email and password are valid, generate a JSON Web Token (JWT) and return it to the client
-//         const token = jwt.sign({ email: user.email }, 'secretkey');
-//         res.status(200).json({ email: user.email, token: token });
-//     } catch (error) {
-//         res.status(400).json({ message: error.message });
-//     }
-// });
