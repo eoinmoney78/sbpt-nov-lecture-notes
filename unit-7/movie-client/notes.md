@@ -132,3 +132,74 @@ const [count, setCount] = useState(() => 0); // CB Function
 ```jsx
 import { useRef}
 ```
+
+# React-Router-DOM
+
+`npm i react-router-dom`
+
+- Client-side routing
+- Installs
+  **index.js**
+
+```js
+import { BrowserRouter } from 'react-router-dom';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>  // <--
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);
+```
+
+**App.jsx**
+
+- Refactor
+
+```jsx
+return (
+  <div className="App">
+    <Routes>
+      <Route path="/" element={<Auth updateToken={updateToken} />} />
+      <Route path="/movie" element={<h2>Movie Section Placeholder</h2>} />
+    </Routes>
+  </div>
+);
+```
+
+- path: decalares which route to view
+- element: which component to display when a path is viewed.
+
+````js
+path= "/endpoint"
+element={<Component/JSX />}
+```
+````
+
+# useEffect()
+
+- Allow us to perform side effects in a function component.
+- Accepts two arguments
+  - function
+  - dependency
+    - optional
+      - Can denote a specific event to trigger.
+
+```js
+useEffect(() => {
+  // Run on every render
+});
+
+useEffect(() => {
+  // Run only on the first render
+}, []);
+
+const [state, setState] = useState();
+
+useEffect(() => {
+  // Run on the first render
+  // Runs any time any dependecy changes
+}, [state]);
+```
