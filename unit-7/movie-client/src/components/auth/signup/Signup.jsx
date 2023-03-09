@@ -26,7 +26,7 @@ function Signup({updateToken}) {
 
         // console.log(bodyObj)
 
-        const url = `http://localhost:4000/user/signup`;
+        const url = `http://localhost:4002/user/signup`;
         const headers = new Headers();
         headers.append("Content-Type", "application/json");
         //* Setting our headers to accept the JSON object within the browser

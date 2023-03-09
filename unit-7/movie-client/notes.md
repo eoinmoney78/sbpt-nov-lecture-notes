@@ -130,7 +130,7 @@ const [count, setCount] = useState(() => 0); // CB Function
 - must be imported in with `react`
 
 ```jsx
-import { useRef}
+import { useRef } from "react";
 ```
 
 # React-Router-DOM
@@ -147,9 +147,9 @@ import { BrowserRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>  // <--
+    <BrowserRouter>  // <-- ADDED
       <App />
-    </BrowserRouter>
+    </BrowserRouter> // <-- ADDED
   </React.StrictMode>
 );
 ```
@@ -172,11 +172,12 @@ return (
 - path: decalares which route to view
 - element: which component to display when a path is viewed.
 
-````js
-path= "/endpoint"
+**example:**
+
+```jsx
+path="/endpoint"
 element={<Component/JSX />}
 ```
-````
 
 # useEffect()
 
@@ -185,7 +186,7 @@ element={<Component/JSX />}
   - function
   - dependency
     - optional
-      - Can denote a specific event to trigger.
+    - Can denote a specific event to trigger.
 
 ```js
 useEffect(() => {
@@ -202,4 +203,23 @@ useEffect(() => {
   // Run on the first render
   // Runs any time any dependecy changes
 }, [state]);
+```
+
+# useParams()
+
+- Comes from React-Router-DOM
+  - Considers the `path` provided within the `<Route>` in `App.jsx`
+  - Recognizes the `:id` as a parameter value in which to respond.
+  - We are able to access the key of `id` much in the same way we did with the server.
+
+# useNavigate()
+
+- Comes from React-Router-DOM
+  - Simply helps us move from one endpoint to another as we desire.
+  - Must pass in the path as a argument.
+
+ex:
+
+```jsx
+navigate("/sample-endpoint");
 ```

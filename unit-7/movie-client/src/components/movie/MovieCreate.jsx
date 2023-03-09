@@ -46,16 +46,16 @@ function MovieCreate(props) {
         e.preventDefault();
         // console.log(titleRef.current.value);
 
-        const url = `${baseURL}/movie`
+        const url = `${baseURL}/movie` // setting our url route
         // console.log(url);
 
         const bodyObj = JSON.stringify({
-            title: titleRef.current.value,
+            title: titleRef.current.value, // getting data from form via useRef to set as title
             genre: genreRef.current.value,
             rating: ratingRef.current.value,
             length: lengthRef.current.value,
             releaseYear: releaseYearRef.current.value
-        });
+        }); // building our body.object to send to server
 
         // console.log(bodyObj);
 
@@ -144,15 +144,11 @@ function MovieCreate(props) {
 }
 
 export default MovieCreate
-/*
 
-
-
-
-title
-genre
-rating
-length
-releaseYear
-
+/* 
+    title
+    genre
+    rating
+    length
+    releaseYear
 */

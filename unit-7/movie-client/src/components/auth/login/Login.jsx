@@ -19,7 +19,7 @@ function Login({updateToken}) {
         });
 
         // target endpoint url
-        const url = 'http://localhost:4000/user/login';
+        const url = 'http://localhost:4002/user/login';
 
         // build try/catch
         try {
